@@ -10,5 +10,15 @@
   <%= @topic.description %>
 </p>
 
+<p>
+  <strong>User Id:</strong>
+  <%= @topic.user_id %>
+</p>
+
+<p>
+<strong>User Email:</strong>
+  <%= @topic.author.email %>
+</p>
+
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>
